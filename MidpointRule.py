@@ -1,6 +1,5 @@
 def midpoint(formula, upperbound, lowerbound, numberOfRectangles):
     formula = formula.replace("^", "**")
-    print ("formula: ", formula)
     width = (upperbound - lowerbound) / numberOfRectangles
     print ("width: ", width)
     area = 0
