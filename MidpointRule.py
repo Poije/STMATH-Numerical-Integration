@@ -1,11 +1,12 @@
 def midpoint(formula, upperbound, lowerbound, numberOfRectangles):
     width = (upperbound - lowerbound) / numberOfRectangles
     area = 0
-    print ("midpoint: ")
+    print ("midpoint: ", end="")
     for i in range (numberOfRectangles):
-        print (lowerbound + width * (i + 0.5))
+        print (lowerbound + width * (i + 0.5), end=" ")
     for i in range(numberOfRectangles):
         area += width * eval(formula, {"x": lowerbound + width * (i + 0.5)})
+    print("")
     return area
 
 formula = input("Enter the function: ")
